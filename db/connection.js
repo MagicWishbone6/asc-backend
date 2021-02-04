@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const uri = `mongodb://localhost/asc`
+const url = `mongodb://localhost/asc`
 
-mongoose.connect(uri, {
+mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true

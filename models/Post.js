@@ -1,4 +1,4 @@
-const mongoose = require('../connection')
+const mongoose = require('../db/connection')
 
 const PostSchema = new mongoose.Schema({
     title: String,
@@ -8,4 +8,4 @@ const PostSchema = new mongoose.Schema({
 
 const Post = mongoose.model('Post', PostSchema)
 
-module.exports = Post
+module.exports = Post;

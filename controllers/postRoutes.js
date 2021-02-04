@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const Post = require('../db/models/Post')
-const User = require('../db/models/User')
+const Post = require('../models/Post')
+const User = require('../models/User')
 
 router.get('/', function(req,res) {
     res.render('index')
