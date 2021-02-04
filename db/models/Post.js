@@ -1,4 +1,4 @@
-const mongoose = require('../db/connection')
+const mongoose = require('../connection')
 
 const PostSchema = new mongoose.Schema({
     title: String,

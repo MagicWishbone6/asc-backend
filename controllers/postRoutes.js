@@ -1,17 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const Post = require('../models/Post')
-const User = require('../models/User')
+const Post = require('../db/models/Post')
 
-router.get('/', function(req,res) {
-    res.render('index')
-})
-
-router.get('/getAll', function(req,res) {
-    Post.find({}, function(err,posts) {
-        if (err)
-            res.send(err)
-        res.json(users)
+router.get('/', (req,res) => {
+    const results = Post.find({})
+    results.then((posts) => {
+        res.render('posts/index', {posts:posts})
     })
 })
 

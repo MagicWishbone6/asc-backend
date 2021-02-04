@@ -1,19 +1,31 @@
 const express = require ('express');
-const router = require('./controllers/userRoutes.js')
 const app = express();
 const cors = require('cors')
 
-app.use(cors())
-var port = 8000;
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
 
 app.set('view engine', 'hbs')
-app.listen(port, function() {
-    console.log(`App running at localhost: ${port}`)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
+app.use(cors())
+
+// routes start
+
+const userController = require(`./controllers/userRoutes.js`)
+const postController = require(`./controllers/postRoutes.js`)
+
+app.get('/', (req,res) => {
+    res.render('index.hbs')
 })
 
-app.use('/', router)
+app.use('/users', userController)
+app.use('/posts', postController)
+
+// routes stop
+
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+    console.log(`App running at localhost: ${port}`)
+})
 
 module.exports = app

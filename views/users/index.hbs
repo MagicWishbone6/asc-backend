@@ -1,0 +1,14 @@
+<h2>This is Users.index:</h2>
+<ul>
+  {{#each users}}
+  <li>
+    <div><h5>{{this.username}}</h5></div>
+    <div>Password: {{this.password}}</div>
+    <div>First Name: {{this.firstName}}</div>
+    <div>Last Name: {{this.lastName}}</div>
+    <div>Email: {{this.email}}</div>
+    <div>Status: {{this.status}}</div>
+    <div>Bio: {{this.bio}}</div>
+  </li>
+  {{/each}}
+</ul>
