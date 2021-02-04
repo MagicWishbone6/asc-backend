@@ -1,17 +1,23 @@
 [{
     "username": "mtham12",
+    "firstName": "Mohit",
+    "lastName": "Thammineedi",
     "email": "mohit.thammineedigmail.com",
     "password":"heytheredelilah12",
     "bio": "Hi I'm Mohit",
     "status": "Online"
 }, {
     "username": "mtham13",
+    "firstName": "Mohit",
+    "lastName": "Thammineedi",
     "email": "mohit.thammineedigmail.com",
     "password":"heytheredelilah12",
     "bio": "Hi I'm Mohit",
     "status": "Online"
 }, {
     "username": "mtham14",
+    "firstName": "Mohit",
+    "lastName": "Thammineedi",
     "email": "mohit.thammineedigmail.com",
     "password":"heytheredelilah12",
     "bio": "Hi I'm Mohit",

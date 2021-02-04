@@ -1,5 +1,5 @@
 const user = require('./models/User.js')
-const Post = require('./models/Post.js')
+const post = require('./models/Post.js')
 const seedData = require('./seeds.json')
 
 user.remove({}).then(() => {
@@ -7,3 +7,9 @@ user.remove({}).then(() => {
 }).then(() => {
   process.exit()
 })
+
+post.remove({}).then(() => {
+    return post.collection.insert(seedData)
+  }).then(() => {
+    process.exit()
+  })
