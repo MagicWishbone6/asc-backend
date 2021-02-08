@@ -15,7 +15,7 @@ The After School Club is a social networking application designed to give the st
 
 
 ### Technologies Used
--Html
--Javscript
--Mongoose
--Express
+- Html
+- Javscript
+- Mongoose
+- Express
