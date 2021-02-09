@@ -19,6 +19,7 @@
   "homepage": "https://github.com/MagicWishbone6/project3-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "method-override": "^3.0.0",
