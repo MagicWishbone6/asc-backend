@@ -25,7 +25,7 @@ app.use('/posts', postController)
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
-    console.log(`App running at localhost: ${port}`)
+    console.log(`App running at: ${port}`)
 })
 
 module.exports = app
