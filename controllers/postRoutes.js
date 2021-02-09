@@ -19,14 +19,14 @@ router.get('/', (req, res) => {
 })
 
 //Create a post
-router.post('/posts', (req, res, next) => {
+router.post('/', (req, res, next) => {
     Post.create(req.body)
         .then((post) => res.json(post))
         .catch(next)
 })
 
 //DELETE a post
-router.delete('/posts/:id', (req, res, next) => {
+router.delete('/:id', (req, res, next) => {
     Post.findByIdAndDelete({ _id: req.params.id })
         .then((deletePost) => res.json(deletePost))
         .catch(next)
