@@ -1,0 +1,25 @@
+[{
+    "username": "mtham12",
+    "firstName": "Mohit",
+    "lastName": "Thammineedi",
+    "email": "mohit.thammineedigmail.com",
+    "password":"heytheredelilah12",
+    "bio": "Hi I'm Mohit",
+    "status": "Online"
+}, {
+    "username": "wolfet2",
+    "firstName": "Tyler",
+    "lastName": "Wolfe",
+    "email": "Tyler.wolfe262@outlook.com",
+    "password":"dummyPass24",
+    "bio": "YO YO YO",
+    "status": "Online"
+}, {
+    "username": "cait23",
+    "firstName": "Caitlin",
+    "lastName": "Lamprecht",
+    "email": "caitlin@email.com",
+    "password":"dummyPass56",
+    "bio": "Today is a great day!",
+    "status": "Online"
+}]
