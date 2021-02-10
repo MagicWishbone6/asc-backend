@@ -4,16 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node server.js"
-=======
-<<<<<<< HEAD
-    "node": "server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
-    "start": "node server.js"
->>>>>>> added heroku instructions
->>>>>>> added heroku instructions
   },
   "engines": { "node": "14.15.1"},
   "repository": {
