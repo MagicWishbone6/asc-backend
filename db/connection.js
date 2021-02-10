@@ -1,14 +1,17 @@
-const dotenv = require('dotenv').config()
-dotenv.config({silent: true})
+require('dotenv').config({silent: true})
+
 const mongoose = require('mongoose')
 
 const mongoURI = 
     process.env.NODE_ENV === `production`
         ? process.env.DB_URL
-        : `mongodb+srv://${process.env.ATLAS_U}:${process.env.ATLAS_P}@cluster0.6kf2m.mongodb.net/asc?authSource=admin&replicaSet=atlas-f955wg-shard-0&readPreference=primary&ssl=true`
+        : `mongodb+srv://${process.env.ATLAS_U}:${process.env.ATLAS_P}@cluster0.6kf2m.mongodb.net/asc`
+        
+        // ?authSource=admin&replicaSet=atlas-f955wg-shard-0&readPreference=primary&ssl=true`
         // console.log(mongoURI)
         // console.log(process.env.ATLAS_P)
         console.log(mongoURI)
+        console.log(process.env.ATLAS_P)
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
