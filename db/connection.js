@@ -1,4 +1,5 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
+dotenv.config({silent: true})
 const mongoose = require('mongoose')
 
 const mongoURI = 
@@ -7,7 +8,7 @@ const mongoURI =
         : `mongodb+srv://${process.env.ATLAS_U}:${process.env.ATLAS_P}@cluster0.6kf2m.mongodb.net/asc?authSource=admin&replicaSet=atlas-f955wg-shard-0&readPreference=primary&ssl=true`
         // console.log(mongoURI)
         // console.log(process.env.ATLAS_P)
-        console.log(require('dotenv').config())
+        console.log(mongoURI)
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
